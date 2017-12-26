@@ -5,7 +5,6 @@ import { Redirect } from 'react-router-dom';
 export default (ChildComponent) => {
   class RequireAuth extends Component {
     render () {
-      console.log(this.props.auth)
       switch (this.props.auth) {
         case false:
           return <Redirect to="/" />
